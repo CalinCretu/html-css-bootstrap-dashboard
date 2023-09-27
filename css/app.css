@@ -1,0 +1,70 @@
+/* utilities */
+:root {
+    --dark: #000000;
+    --dark-grey: #080b12;
+    --grey-blue: #141922;
+    --grey: #282828;
+    --light-grey: #5a5a5a;
+    --green: #adff2f;
+    --light: #FFFFFF;
+}
+
+
+
+
+
+
+/* skeleton */ 
+.header {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.app {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.app_container {
+    overflow: hidden;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* DEBUG */
+.debug .app {
+    border: 3px dashed red;
+    padding: 30px;
+}
+
+.debug .aside {
+    border: 3px dashed blue;
+    padding: 30px;
+}
+
+.debug .app_container {
+    border: 3px dashed green;
+    padding: 30px;
+}
+
+.debug .header {
+    border: 3px dashed yellow;
+    padding: 30px;
+}
+
+.debug .app__content {
+    border: 3px dashed black;
+    padding: 30px;
+}
