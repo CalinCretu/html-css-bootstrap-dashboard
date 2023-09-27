@@ -3,16 +3,25 @@
     --dark-blue: #051E34;
     --blue: #1B72E8;
     --light-grey: #F8F9FA;
+    --gold: #FFAD45;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
 
-
-
-
-
-/* skeleton */ 
+/* skeleton */
 .header {
-    width: 60px;
+    width: 70px;
     flex-shrink: 0;
     background-image: url('../img/sidebar-bg.png');
     background-color: var(--dark-blue);
@@ -35,6 +44,7 @@
 
 
 
+
 /* header */
 .header_buttons {
     width: 20px;
@@ -46,6 +56,20 @@
 
 
 
+
+
+/* aside */
+.logo-sm {
+    max-width: 45px;
+}
+
+.logo-lg {
+    display: none;
+}
+
+.bell {
+    color: var(--gold);
+}
 
 
 
@@ -60,7 +84,15 @@
     }
 
     .header {
-        width: 150px;
+        width: 170px;
+    }
+
+    .logo-sm {
+        display: none;
+    }
+
+    .logo-lg {
+        display: block;
     }
 }
 
@@ -74,26 +106,18 @@
 
 
 
-
-
-
-
-
-
-
-
 /* DEBUG */
-.debug .app {
+.debu .app {
     border: 3px dashed red;
     padding: 30px;
 }
 
-.debug .aside {
+.debu .aside {
     border: 3px dashed blue;
     padding: 30px;
 }
 
-.debug .app_container {
+.debu .app_container {
     border: 3px dashed green;
     padding: 30px;
 }
@@ -103,7 +127,7 @@
     padding: 30px;
 }
 
-.debug .app__content {
+.debu .app__content {
     border: 3px dashed black;
     padding: 30px;
 }
