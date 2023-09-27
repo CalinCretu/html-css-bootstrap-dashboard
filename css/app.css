@@ -1,12 +1,8 @@
 /* utilities */
 :root {
-    --dark: #000000;
-    --dark-grey: #080b12;
-    --grey-blue: #141922;
-    --grey: #282828;
-    --light-grey: #5a5a5a;
-    --green: #adff2f;
-    --light: #FFFFFF;
+    --dark-blue: #051E34;
+    --blue: #1B72E8;
+    --light-grey: #F8F9FA;
 }
 
 
@@ -16,8 +12,10 @@
 
 /* skeleton */ 
 .header {
-    width: 300px;
+    width: 60px;
     flex-shrink: 0;
+    background-image: url('../img/sidebar-bg.png');
+    background-color: var(--dark-blue);
 }
 
 .app {
@@ -30,6 +28,47 @@
 
 }
 
+.aside {
+    background-color: var(--light-grey);
+}
+
+
+
+
+/* header */
+.header_buttons {
+    width: 20px;
+}
+
+.header_buttons-text {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/* media */
+@media (min-width: 576px) {}
+
+@media (min-width: 768px) {
+    .header_buttons-text {
+        display: block;
+    }
+
+    .header {
+        width: 150px;
+    }
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
+
+@media (min-width: 1400px) {}
 
 
 
@@ -59,7 +98,7 @@
     padding: 30px;
 }
 
-.debug .header {
+.debu .header {
     border: 3px dashed yellow;
     padding: 30px;
 }
