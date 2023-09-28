@@ -29,6 +29,7 @@ menu {
   flex-shrink: 0;
   background-image: url('../img/sidebar-bg.png');
   background-color: var(--dark-blue);
+  overflow: hidden;
 }
 
 .app {
@@ -45,6 +46,9 @@ menu {
   background-color: var(--light-grey);
 }
 
+.app__content {
+  overflow: auto;
+}
 
 
 
