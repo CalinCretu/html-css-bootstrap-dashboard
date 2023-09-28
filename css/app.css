@@ -78,6 +78,23 @@ menu {
 
 
 
+
+/* aside */
+                /* prossime classi */
+.avatar-img {
+  width: 25px;
+}
+
+.status-icons {
+  border: 1px solid grey;
+  border-radius: 20%;
+  padding: 5px;
+}
+                /* F.A.Q. */
+
+
+
+
 /* media */
 @media (min-width: 576px) {}
 
