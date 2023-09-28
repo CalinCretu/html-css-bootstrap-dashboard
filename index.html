@@ -30,7 +30,14 @@
         <div class="d-none d-lg-block mx-2"><i class="fa-solid fa-list-ul"></i></div>
         <div class="d-none d-lg-block mx-2"><i class="fa-solid fa-circle-question"></i></div>
         <div class="d-none d-lg-block mx-2"><i class="fa-solid fa-ellipsis-vertical"></i></div>
-        <div class="bell mx-2"><i class="fa-solid fa-bell"></i></div>
+        <button class="btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <div class="bell"><i class="fa-solid fa-bell"></i></div>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Profilo</a></li>
+          <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+          <li><a class="dropdown-item" href="#">Logout</a></li>
+        </ul>
       </div>
     </div>
     <div class="app_container d-flex flex-grow-1">
@@ -84,21 +91,60 @@
                 </div>
                 <div class="col-3 d-flex my-2 d-md-block order-first order-md-last text-center">
                   <span class="">Nuovo Studente</span>
-                  <span><a class="btn border text-light ms-2" data-bs-toggle="offcanvas" href="#offcanvas"
-                      role="button" aria-controls="offcanvas">+</a>
+                  <span><a class="btn border text-light ms-2" data-bs-toggle="offcanvas" href="#offcanvas" role="button"
+                      aria-controls="offcanvas">+</a>
                   </span>
                   <!-- offcanvas -->
-                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas"
-                    aria-labelledby="offcanvasLabel">
+                  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
                     <div class="offcanvas-header">
-
+                      <h4>Inserisci un nuovo studente</h4>
                     </div>
                     <div class="offcanvas-body">
-
-
+                      <form>
+                        <div class="row mb-4">
+                          <div class="col">
+                            <div class="form-outline">
+                              <label class="form-label" for="form6Example1">Nome</label>
+                              <input type="text" id="form6Example1" class="form-control" />
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-outline">
+                              <label class="form-label" for="form6Example2">Cognome</label>
+                              <input type="text" id="form6Example2" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row mb-4">
+                          <div class="col">
+                            <div class="form-outline">
+                              <label class="form-label" for="form6Example1">Email</label>
+                              <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" aria-label="Username"
+                                  aria-describedby="basic-addon1">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-outline">
+                              <label class="form-label" for="form6Example2">Password</label>
+                              <input type="text" id="form6Example2" class="form-control" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-outline mb-4">
+                          <label class="form-label" for="form6Example3">Indirizzo</label>
+                          <input type="text" id="form6Example3" class="form-control" />
+                        </div>
+                        <div class="form-check d-flex justify-content-center mb-4">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form6Example8" checked />
+                          <label class="form-check-label" for="form6Example8"> Seleziona per proseguire </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Salva</button>
+                      </form>
                     </div>
                   </div>
-                  <!-- offcanvas -->
                 </div>
               </div>
             </div>
@@ -296,7 +342,7 @@
                   <ul class="list-group">
                     <li class="list-group-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" class="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Kickoff nuove classi
                         </label>
@@ -304,7 +350,7 @@
                     </li>
                     <li class="list-group-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" class="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Lezione su Bootstrap 5 in classe #75
                         </label>
@@ -312,7 +358,7 @@
                     </li>
                     <li class="list-group-item">
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <input class="form-check-input" type="checkbox" value="" class="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
                           Controllare username github studenti
                         </label>
