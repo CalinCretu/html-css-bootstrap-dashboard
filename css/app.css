@@ -1,21 +1,22 @@
 /* utilities */
 :root {
-    --dark-blue: #051E34;
-    --blue: #1B72E8;
-    --light-grey: #F8F9FA;
-    --gold: #FFAD45;
+  --dark-blue: #051E34;
+  --blue: #1B72E8;
+  --not-so-dark-blue: #165BBA;
+  --light-grey: #F8F9FA;
+  --gold: #FFAD45;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 ul,
 ol,
 menu {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
 }
 
 
@@ -24,25 +25,26 @@ menu {
 
 /* skeleton */
 .header {
-    width: 70px;
-    flex-shrink: 0;
-    background-image: url('../img/sidebar-bg.png');
-    background-color: var(--dark-blue);
+  width: 70px;
+  flex-shrink: 0;
+  background-image: url('../img/sidebar-bg.png');
+  background-color: var(--dark-blue);
 }
 
 .app {
-    height: 100vh;
-    overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .app_container {
-    overflow: hidden;
+  overflow: hidden;
 
 }
 
 .aside {
-    background-color: var(--light-grey);
+  background-color: var(--light-grey);
 }
+
 
 
 
@@ -50,11 +52,11 @@ menu {
 
 /* header */
 .header_buttons {
-    width: 20px;
+  width: 20px;
 }
 
 .header_buttons-text {
-    display: none;
+  display: none;
 }
 
 
@@ -63,15 +65,15 @@ menu {
 
 /* aside */
 .logo-sm {
-    max-width: 45px;
+  max-width: 45px;
 }
 
 .logo-lg {
-    display: none;
+  display: none;
 }
 
 .bell {
-    color: var(--gold);
+  color: var(--gold);
 }
 
 
@@ -79,8 +81,22 @@ menu {
 
 
 
-/* aside */
-                /* prossime classi */
+/* app-content */
+/* hero */
+.hero {
+  background-color: var(--blue);
+}
+
+.hero-badge {
+  background-color: var(--not-so-dark-blue);
+  font-size: 15px;
+}
+
+.plus-button {
+  border: 1px solid currentColor;
+}
+
+/* prossime classi */
 .avatar-img {
   width: 25px;
 }
@@ -90,7 +106,9 @@ menu {
   border-radius: 20%;
   padding: 5px;
 }
-                /* F.A.Q. */
+
+/* F.A.Q. */
+
 
 
 
@@ -99,21 +117,21 @@ menu {
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {
-    .header_buttons-text {
-        display: block;
-    }
+  .header_buttons-text {
+    display: block;
+  }
 
-    .header {
-        width: 170px;
-    }
+  .header {
+    width: 170px;
+  }
 
-    .logo-sm {
-        display: none;
-    }
+  .logo-sm {
+    display: none;
+  }
 
-    .logo-lg {
-        display: block;
-    }
+  .logo-lg {
+    display: block;
+  }
 }
 
 @media (min-width: 992px) {}
@@ -128,26 +146,26 @@ menu {
 
 /* DEBUG */
 .debu .app {
-    border: 3px dashed red;
-    padding: 30px;
+  border: 3px dashed red;
+  padding: 30px;
 }
 
 .debu .aside {
-    border: 3px dashed blue;
-    padding: 30px;
+  border: 3px dashed blue;
+  padding: 30px;
 }
 
 .debu .app_container {
-    border: 3px dashed green;
-    padding: 30px;
+  border: 3px dashed green;
+  padding: 30px;
 }
 
 .debu .header {
-    border: 3px dashed yellow;
-    padding: 30px;
+  border: 3px dashed yellow;
+  padding: 30px;
 }
 
 .debu .app__content {
-    border: 3px dashed black;
-    padding: 30px;
+  border: 3px dashed black;
+  padding: 30px;
 }
